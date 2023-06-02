@@ -1,0 +1,22 @@
+import React from 'react'
+import { Provider } from 'react-redux'
+import { PersistGate } from 'redux-persist/integration/react'
+import { ThemeProvider } from 'styled-components/native'
+
+import { App } from '@screens/app'
+
+import { persistor, store } from '@store/store'
+
+import { THEME } from '@theme/colors'
+
+export const Main = () => {
+  return (
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <ThemeProvider theme={THEME}>
+          <App />
+        </ThemeProvider>
+      </PersistGate>
+    </Provider>
+  )
+}

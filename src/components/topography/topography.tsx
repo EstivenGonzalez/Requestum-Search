@@ -7,7 +7,7 @@ import { StyledTopography } from './topography.styles'
 import { FONTS } from '@theme/fonts'
 
 export const Topography: FC<TopographyProps> = (props) => {
-  const { weight = 400, family = 'Sans', fontSize, children, style, color, ...textProps } = props
+  const { weight = 400, family, fontSize, children, style, color, ...textProps } = props
 
   return (
     <StyledTopography

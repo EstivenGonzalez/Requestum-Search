@@ -14,15 +14,20 @@ export interface StyledTopographyProps {
 }
 
 interface DefaultFont {
-  family: typeof FONTS.default.name
-  weight: keyof typeof FONTS.default.weight
+  family?: typeof FONTS.default.name
+  weight?: keyof typeof FONTS.default.weight
 }
-interface PancettaFont {
-  family: typeof FONTS.pancetta.name
-  weight: keyof typeof FONTS.pancetta.weight
+interface PancettaFontRegular {
+  family?: typeof FONTS.pancettaSemiBold.name
+  weight?: never
+}
+interface PancettaFontSemiBold {
+  family?: typeof FONTS.pancettaRegular.name
+  weight?: never
 }
 
 //Strongly typed fonts
 export type TopographyProps =
   | (CommonTopographyProps & DefaultFont)
-  | (CommonTopographyProps & PancettaFont)
+  | (CommonTopographyProps & PancettaFontRegular)
+  | (CommonTopographyProps & PancettaFontSemiBold)

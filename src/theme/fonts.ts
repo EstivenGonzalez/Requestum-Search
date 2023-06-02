@@ -1,6 +1,6 @@
 export const FONTS = {
   default: {
-    name: 'Sans',
+    name: undefined, //default font
     weight: {
       100: '100',
       200: '200',
@@ -13,11 +13,10 @@ export const FONTS = {
       900: '900',
     },
   },
-  pancetta: {
-    name: 'PancettaSerifPro',
-    weight: {
-      400: '400', //Regular
-      600: '600', //SemiBold
-    },
+  pancettaSemiBold: {
+    name: 'PancettaSerifPro-SemiBold',
+  },
+  pancettaRegular: {
+    name: 'PancettaSerifPro-Regular',
   },
 } as const

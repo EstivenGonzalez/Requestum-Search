@@ -1,0 +1,13 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/PancettaSerifPro-Regular.ttf",
+      "sha1": "8a5b63f0a4ce6d1509310a60dd2143002209b921"
+    },
+    {
+      "path": "src/assets/fonts/PancettaSerifPro-SemiBold.ttf",
+      "sha1": "51fedf011a63f2df99d3a0d239a6b35093a8bf74"
+    }
+  ]
+}

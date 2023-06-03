@@ -1,7 +1,7 @@
-import { Repository } from '@typings/global'
+import { IRepository } from '@typings/global'
 
-export interface RepositoryProps {
-  name: Repository['name']
-  language: Repository['language']
-  description: Repository['description']
+export interface IRepositoryProps {
+  name: IRepository['name']
+  language: IRepository['language']
+  description: IRepository['description']
 }

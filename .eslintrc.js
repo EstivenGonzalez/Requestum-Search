@@ -54,6 +54,7 @@ module.exports = {
               ],
               ['^react', '^@?\\w'],
               ['^@screens|screens$', '^@components', '^\\.'],
+              ['^@modules'],
               ['^@services|services$|api$|utils$'],
               ['^@hooks'],
               ['^@store|redux$'],

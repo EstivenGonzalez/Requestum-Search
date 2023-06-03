@@ -1,12 +1,12 @@
 import React, { FC } from 'react'
 
-import { TopographyProps } from './topography.types'
+import { TTopographyProps } from './topography.types'
 
 import { StyledTopography } from './topography.styles'
 
 import { FONTS } from '@theme/fonts'
 
-export const Topography: FC<TopographyProps> = (props) => {
+export const Topography: FC<TTopographyProps> = (props) => {
   const { weight = 400, family, fontSize, children, style, color, ...textProps } = props
 
   return (

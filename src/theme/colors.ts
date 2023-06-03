@@ -7,3 +7,4 @@ export const THEME = {
 }
 
 export type ThemeType = typeof THEME
+export type Color = keyof typeof THEME

@@ -6,12 +6,13 @@ import { FONTS } from '@theme/fonts'
 
 interface ICommonTopographyProps extends IStyledTopographyProps, TextProps, PropsWithChildren {
   style?: StyleProp<TextStyle>
-  numberOfLines?: number
 }
 
 export interface IStyledTopographyProps {
   color?: Color
   fontSize?: number
+  maxWidth?: number
+  isCentered?: boolean
 }
 
 interface IDefaultFont {

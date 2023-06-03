@@ -6,16 +6,16 @@ import { Topography } from '@components/topography'
 const SPACING = 20
 
 const row = css`
-  margin-bottom: ${SPACING}px;
+  margin-top: ${SPACING}px;
 `
 
 export const StyledRepository = {
-  Repository: styled.View`
+  Repository: styled.Pressable`
     border-radius: 10px;
     background-color: ${({ theme }) => theme.white};
     padding: ${SPACING}px;
   `,
-  Name: styled(Topography)`
+  Description: styled(Topography)`
     ${row}
   `,
   Language: styled(Topography)`

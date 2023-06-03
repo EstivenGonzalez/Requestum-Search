@@ -1,4 +1,5 @@
 export const THEME = {
+  tomato: '#ff3333',
   primary: '#FDF3D0',
   white: '#FFF',
   black: '#000',

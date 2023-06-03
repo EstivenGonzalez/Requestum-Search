@@ -14,13 +14,13 @@ export const Header: React.FC = () => {
           <Topography family='PancettaSerifPro-SemiBold' fontSize={40} color='primary'>
             requestum
           </Topography>
-          <Topography family='PancettaSerifPro-Regular' fontSize={16} color={'primary'}>
+          <Topography family='PancettaSerifPro-Regular' fontSize={16} color='primary'>
             web development company
           </Topography>
         </Styled.CompanyName>
       </Styled.Wrapper>
       <Topography color='primary' weight={500}>
-        Github users search app
+        Github repositories search app
       </Topography>
       <Styled.Delimiter />
     </Styled.Header>

@@ -1,6 +1,5 @@
-export interface IRepository {
-  id: string
-  name: string
-  language: string
-  description: string
-}
+import { z } from 'zod'
+
+import { repositorySchema } from '@services/repository'
+
+export type TRepository = z.infer<typeof repositorySchema>

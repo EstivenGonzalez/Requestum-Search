@@ -20,7 +20,7 @@ export const Main = () => {
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <ThemeProvider theme={THEME}>
-          <StatusBar barStyle='light-content' />
+          <StatusBar barStyle='light-content' backgroundColor={THEME.background} />
           <App />
         </ThemeProvider>
       </PersistGate>

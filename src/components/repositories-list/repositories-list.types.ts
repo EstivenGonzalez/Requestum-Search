@@ -1,6 +1,5 @@
-import { IRepository } from '@typings/global'
+import { TRepository } from '@typings/global'
 
 export interface IRepositoriesListProps {
-  repositories: IRepository[]
-  onEndReached: () => Promise<void>
+  repositories: TRepository[]
 }

@@ -7,15 +7,15 @@ export const historySlice = createSlice({
   initialState: [] as string[],
   reducers: {
     addToHistory: (history, { payload }: PayloadAction<string>) => {
-      if (!payload.trim()) {
-        return
-      }
+      const newTerm = payload.trim()
 
-      const similarTermIndex = history.findIndex((historyTerm) => historyTerm === payload)
+      const similarTermIndex = history.findIndex(
+        (historyTerm) => historyTerm.toLowerCase() === newTerm.toLowerCase(),
+      )
 
       if (similarTermIndex >= 0) {
         history.splice(similarTermIndex, 1)
-        history.unshift(payload)
+        history.unshift(newTerm)
         return
       }
 
@@ -23,7 +23,7 @@ export const historySlice = createSlice({
         history.pop()
       }
 
-      history.unshift(payload)
+      history.unshift(newTerm)
     },
   },
 })

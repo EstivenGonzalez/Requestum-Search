@@ -18,14 +18,15 @@
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.18.1",
     "@reduxjs/toolkit": "^1.9.5",
-    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "axios": "^1.4.0",
     "react": "18.2.0",
     "react-native": "0.71.8",
     "react-native-bootsplash": "^4.7.1",
     "react-native-svg": "^13.9.0",
     "react-redux": "^8.0.5",
     "redux-persist": "^6.0.0",
-    "styled-components": "^5.3.11"
+    "styled-components": "^5.3.11",
+    "zod": "^3.21.4"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
@@ -42,6 +43,7 @@
     "eslint": "^8.19.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
     "husky": "^8.0.3",
     "metro-react-native-babel-preset": "0.73.9",
     "prettier": "^2.4.1",

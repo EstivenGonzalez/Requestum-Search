@@ -1,33 +1,34 @@
 import { PropsWithChildren } from 'react'
 import { StyleProp, TextProps, TextStyle } from 'react-native'
 
+import { Color } from '@theme/colors'
 import { FONTS } from '@theme/fonts'
 
-export interface CommonTopographyProps extends StyledTopographyProps, TextProps, PropsWithChildren {
+interface ICommonTopographyProps extends IStyledTopographyProps, TextProps, PropsWithChildren {
   style?: StyleProp<TextStyle>
   numberOfLines?: number
 }
 
-export interface StyledTopographyProps {
-  color?: string
+export interface IStyledTopographyProps {
+  color?: Color
   fontSize?: number
 }
 
-interface DefaultFont {
+interface IDefaultFont {
   family?: typeof FONTS.default.name
   weight?: keyof typeof FONTS.default.weight
 }
-interface PancettaFontRegular {
+interface IPancettaFontRegular {
   family?: typeof FONTS.pancettaSemiBold.name
   weight?: never
 }
-interface PancettaFontSemiBold {
+interface IPancettaFontSemiBold {
   family?: typeof FONTS.pancettaRegular.name
   weight?: never
 }
 
 //Strongly typed fonts
-export type TopographyProps =
-  | (CommonTopographyProps & DefaultFont)
-  | (CommonTopographyProps & PancettaFontRegular)
-  | (CommonTopographyProps & PancettaFontSemiBold)
+export type TTopographyProps =
+  | (ICommonTopographyProps & IDefaultFont)
+  | (ICommonTopographyProps & IPancettaFontRegular)
+  | (ICommonTopographyProps & IPancettaFontSemiBold)

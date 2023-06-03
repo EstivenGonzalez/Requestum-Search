@@ -2,13 +2,13 @@ import React from 'react'
 
 import { Topography } from '@components/topography'
 
-import { RepositoryProps } from './repository.types'
+import { IRepositoryProps } from './repository.types'
 
 import { StyledRepository as Styled } from './repository.styles'
 
 const WEIGHT = 600
 
-export const Repository: React.FC<RepositoryProps> = (props) => {
+export const Repository: React.FC<IRepositoryProps> = (props) => {
   const { description, name, language } = props
 
   return (

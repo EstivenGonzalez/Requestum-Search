@@ -2,9 +2,11 @@ import styled from 'styled-components/native'
 
 import { REFERENCE_SCALE } from '@constants/device'
 
-import { StyledTopographyProps } from './topography.types'
+import { IStyledTopographyProps } from './topography.types'
 
-export const StyledTopography = styled.Text<StyledTopographyProps>`
-  font-size: ${({ fontSize = 15 }) => fontSize * REFERENCE_SCALE}px;
-  ${({ color }) => color && `color: ${color}`};
+import { THEME } from '@theme/colors'
+
+export const StyledTopography = styled.Text<IStyledTopographyProps>`
+  font-size: ${({ fontSize = 17 }) => fontSize * REFERENCE_SCALE}px;
+  ${({ color }) => color && `color: ${THEME[color]}`};
 `

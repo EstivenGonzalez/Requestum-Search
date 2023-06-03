@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { StatusBar } from 'react-native'
 import RNBootSplash from 'react-native-bootsplash'
 import { Provider } from 'react-redux'
 import { PersistGate } from 'redux-persist/integration/react'
@@ -19,6 +20,7 @@ export const Main = () => {
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <ThemeProvider theme={THEME}>
+          <StatusBar barStyle='light-content' />
           <App />
         </ThemeProvider>
       </PersistGate>

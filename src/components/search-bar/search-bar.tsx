@@ -1,12 +1,12 @@
 import React from 'react'
 
-import { SearchBarProps } from './search-bar.types'
+import { ISearchBarProps } from './search-bar.types'
 
 import { StyledSearchBar } from './search-bar.styles'
 
 import { THEME } from '@theme/colors'
 
-export const SearchBar: React.FC<SearchBarProps> = (props) => {
+export const SearchBar: React.FC<ISearchBarProps> = (props) => {
   const { value, placeholder, onChangeText } = props
 
   return (
